@@ -1,10 +1,334 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Test Landing Page</title>
-    </head>
-    <body>
-        <h1>This is the place</h1>
-        <p><a href="./mapfoundry.html">Try Map Foundry</a></p>
-    </body>
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Map Foundry</title>
+
+		<meta name="description" content="Location Analytics Now">
+		<meta name="author" content="Nate Currit">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!-- <link rel="stylesheet" href="css/theme/black.css" id="theme"> -->
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides" style="width:900px; height:500px;">
+
+			<!-- Title slide with blue/green -->
+				<section>
+					<div class="block" style="width: auto; height: auto; left: 80px; top: 0px;">
+						<div style="text-align: center;">
+							<img data-src="./img/foundry-bg.svg" style="width: 300px">						
+						</div>
+					</div>
+					<div class="block" style="width: 600px; height: auto; left: 400px; top: 30px;">
+						<div style="text-align: center;">
+							<h1>Map Foundry</h1>
+						</div>
+					</div>
+					<div class="block" style="width: 600px; height: auto; left: 400px; top: 200px;">
+						<div style="text-align: center;">
+							<small><h3>Location Analytics Now</h3></small>
+						</div>
+					</div>
+				</section>
+
+			<!-- Title slide with orange -->
+				<section>
+					<div class="block" style="width: auto; height: auto; left: 80px; top: 0px;">
+						<div style="text-align: center;">
+							<img data-src="./img/foundry.svg" style="width: 300px">						
+						</div>
+					</div>
+					<div class="block" style="width: 600px; height: auto; left: 400px; top: 30px;">
+						<div style="text-align: center;">
+							<h1>Map Foundry</h1>
+						</div>
+					</div>
+					<div class="block" style="width: 600px; height: auto; left: 400px; top: 200px;">
+						<div style="text-align: center;">
+							<small><h3>Location Analytics Now</h3></small>
+						</div>
+					</div>
+				</section>
+
+			<!-- Location analytics slide -->
+				<section>
+					<div class="block" style="width: 1000px; height: auto; left: 0px; top: 0px;">
+					    <div style="text-align: center;">
+					        <h2>Location Analytics</h2>
+					    </div>
+					</div>
+					<div class="block" style="width: 500px; left: 0px; top: 125px; height: auto;">
+					    <div style="z-index: 13; text-align: left;">
+					        <h5>Increase your business productivity with...</h5>
+					        <p class="fragment fade-in">Geo-aware analytics</p>
+					        <p class="fragment fade-in">Geospatial insight</p>
+					        <em><p class="fragment fade-in">Continue exploring...</p></em>
+					    </div>
+					</div>
+					<div class="block" data-block-type="image" style="width: auto; height: auto; left: 500px; top: 125px;" data-block-id="f1e816e88b7322a02ad8558bad23384b">
+					    <div class="sl-block-content" data-inline-svg="false">
+					        <img src="./img/geospatial.svg" data-natural-width="216" data-natural-height="216" style=""/>
+					        <p>Placeholder for a map.</p>
+					    </div>
+					</div>
+				</section>
+
+			<!-- Example columns slide -->
+				<!-- <section>
+					 <div class="block" style="width: 410px; left: 49px; top: 106px; height: auto;">
+					 	<div style="text-align: left; z-index: 11;">
+					 		<h2>First column</h2>
+					 	</div>
+					 </div>
+					 <div class="block" style="width: 410px; left: 49px; top: 200px; height: auto;" style="text-align: left; z-index: 12;">
+					 	<div style="text-align: left; z-index: 12;">
+        					<p>First set of text here. How is the size of this text determined?</p>
+    					</div>
+					</div>
+					<div class="block" style="width: 461px; left: 499px; top: 106px; height: auto;">
+					    <div style="text-align: left; z-index: 13;">
+					        <h2>Second column</h2>
+					    </div>
+					</div>
+					<div class="block" style="width: 410px; left: 499px; top: 200px; height: auto;">
+					    <div style="text-align: left; z-index: 14;">
+					        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis.</p>
+					    </div>
+					</div>
+				</section> -->
+
+			<!-- Geospatial dropdown slides -->
+				<section>
+					<section>
+						<div class="block" style="width: auto; left: -20px; top: -50px; height: auto;">
+							<div style="text-align: center;">
+								<img data-src="./img/geospatial.svg">
+							</div>
+						</div>
+						<div class="block" style="width: 500px; left: 250px; top: 0px; height: auto;">
+							<div style="text-align: left;">
+								<h2>Geospatial expertise</h2>
+							</div>
+						</div>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<div>
+							<h2>We uncover the <em>where</em> in your data.</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</section>
+					<section>
+						<div>
+							<h2>We perform location-based analyses to uncover trends and opportunities</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</section>
+				</section>
+
+			<!-- FOSS4G dropdown slides -->
+				<section>
+					<section>
+						<div class="block" style="width: 250px; left: 0px; top: 0px; height: auto;">
+							<div style="text-align: left;">
+								<img data-src="./img/foss4g.svg">
+							</div>
+						</div>
+						<div class="block" style="width: 500px; left: 250px; top: 0px; height: auto;">
+							<div style="text-align: left;">
+								<h2>FOSS4G expertise</h2>
+							</div>
+						</div>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<div>
+							<h2>We uncover the <em>where</em> in your data.</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</section>
+					<section>
+						<div>
+							<h2>We perform location-based analyses to uncover trends and opportunities</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</section>
+				</section>
+
+			<!-- Web development dropdown slides -->
+				<section>
+					<section>
+						<div class="block" style="width: 250px; left: 0px; top: 0px; height: auto;">
+							<div style="text-align: left;">
+								<img data-src="./img/webdev.svg">
+							</div>
+						</div>
+						<div class="block" style="width: 700px; left: 250px; top: 0px; height: auto;">
+							<div style="text-align: left;">
+								<h2>Web development expertise</h2>
+							</div>
+						</div>
+						<br>
+						<a href="#" class="navigate-down">
+							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<div>
+							<h2>We uncover the <em>where</em> in your data.</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</section>
+					<section>
+						<div>
+							<h2>We perform location-based analyses to uncover trends and opportunities</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</section>
+				</section>
+
+			<!-- Gallery dropdown slides -->
+				<section>
+					<section>
+						<div>
+							<h2>Gallery</h2>
+							<p>
+								Check out a selection of our location visualizations.
+							</p>
+						</div>
+					</section>
+					<section>
+						<div>
+							<h2>place holder 1</h2>
+						</div>
+					</section>
+					<section>
+						<div>
+							<h2>place holder 2</h2>
+						</div>
+					</section>
+					<section>
+						<div>
+							<h2>place holder 3</h2>
+						</div>
+					</section>
+				</section>
+
+				<section>
+					<div class="block" style="width: auto; height: auto; left: 300px; top: 150px; background-color: rgba(196,179,179, 0.8); border-radius:10px; z-index: 2;">
+						<div style="text-align: center;">
+							<h2>Contact us</h2>
+							<p>info@mapfoundry.com</p>
+							<hr style="width:75%">
+							<small><small><p>(We work everywhere, but our physical locations are shown on the map.)</p></small></small>
+						</div>
+					</div>
+					<div class="block" style="width: auto; height: auto; left: 0px; top: 0px; z-index: 1;">
+						<div>
+							<script src="https://embed.github.com/view/geojson/mapfoundry/gis/master/map.topojson?height=600&width=1200"></script>
+						</div>
+					</div>
+				</section>	
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				math: {
+					mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+				
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+				width: 1000,
+				height: 600,
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true },
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
