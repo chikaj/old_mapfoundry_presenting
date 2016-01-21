@@ -1,6 +1,6 @@
 // create the map but don't add it to the DOM until
 // until transitioning to the gallery slides
-var map = var layer = new ol.layer.Tile({
+var layer = new ol.layer.Tile({
 	source: new ol.source.Stamen({
 		layer: 'watercolor'
 	})
