@@ -1,7 +1,24 @@
+// create the map but don't add it to the DOM until
+// until transitioning to the gallery slides
+var layer = new ol.layer.Tile({
+	source: new ol.source.Stamen({
+		layer: 'watercolor'
+	})
+});
+
+var view = new ol.View({
+	zoom: 15,
+});
+console.log("About to build the map!")
+var map = new ol.Map({
+	layers: [layer],
+	view: view
+});
+
 var slide_one = function() {
 	var layer = new ol.layer.Tile({
 		source: new ol.source.Stamen({
-			layer: 'toner-lite'  /*terrain, terrain-background, terrain-labels, terrain-lines, 
+			layer: 'toner-lite'  /*terrain, terrain-background, terrain-labels, terrain-lines,
 			toner, toner-background, toner-hybrid, toner-labels, toner-lines, toner-lite, watercolor*/
 		})
 	});
@@ -28,9 +45,9 @@ var slide_one = function() {
 var baseMap = function() {
 	var layer = new ol.layer.Tile({
 		source: new ol.source.Stamen({
-			layer: 'watercolor' 
+			layer: 'watercolor'
 		})
-	}); 
+	});
 
 	/*var layer2 = new ol.layer.Image({
     	extent: [-13884991, 2870341, -7455066, 6338219],
@@ -65,65 +82,20 @@ var baseMap = function() {
 	});
 }
 
+function recenter(long, lat) {
+	map.setTarget('map');
+	var center = new ol.proj.transform([long, lat], 'EPSG:4326', 'EPSG:3857');
+	view.setCenter(center);
+}
+
 var zoomToSanMarcos = function() {
-	var layer = new ol.layer.Tile({
-		source: new ol.source.Stamen({
-			layer: 'watercolor' 
-		})
-	}); 
-
-	var center = new ol.proj.transform([-97.9389, 29.8794], 'EPSG:4326', 'EPSG:3857');
-
-	var view = new ol.View({
-		center: center,
-		zoom: 15,
-	});
-	console.log("About to build the map!")
-	var map = new ol.Map({
-		target: 'map',
-		layers: [layer],
-		view: view
-	});
+	recenter(-97.9389, 29.8794);
 }
 
 var zoomToIssaquah = function() {
-	var layer = new ol.layer.Tile({
-		source: new ol.source.Stamen({
-			layer: 'watercolor' 
-		})
-	}); 
-
-	var center = new ol.proj.transform([-122.0433, 47.5356], 'EPSG:4326', 'EPSG:3857');
-
-	var view = new ol.View({
-		center: center,
-		zoom: 15,
-	});
-	console.log("About to build the map!")
-	var map = new ol.Map({
-		target: 'map',
-		layers: [layer],
-		view: view
-	});
+	recenter(-122.0433, 47.5356);
 }
 
 var zoomToSLC = function() {
-	var layer = new ol.layer.Tile({
-		source: new ol.source.Stamen({
-			layer: 'watercolor' 
-		})
-	}); 
-
-	var center = new ol.proj.transform([-111.8833, 40.7500], 'EPSG:4326', 'EPSG:3857');
-
-	var view = new ol.View({
-		center: center,
-		zoom: 15,
-	});
-	console.log("About to build the map!")
-	var map = new ol.Map({
-		target: 'map',
-		layers: [layer],
-		view: view
-	});
+	recenter(-111.8833, 40.7500);
 }
